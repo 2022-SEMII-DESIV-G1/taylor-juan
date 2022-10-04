@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte2</title>
+</head>
+<body>
+    <h1>Inicie Sesion</h1>
+    <hr>
+    <form id="formulario" action="" method="post">
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Ingresar correo">
+        </div>
+        <br>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Ingresar contraseña">
+        </div>
+        <br>
+        <button type="Login" >Login</button>
+    </form>
+    
+    <script>
+      var formulario = document.getElementById('formulario');
+      formulario.addEventListener('submit',(e) =>
+      {
+        e.preventDefault()
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        console.log("email: " + email);
+        console.log("password: " + password);
+      }  )
+      
+    </script>
+    <hr>
+</body>
+</html>
